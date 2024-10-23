@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Emojii stories</title>
+    <link rel="stylesheet" href="style.css">
+    <!--icon-->
+    <link href="img/icon.png" rel="icon">
+    <!--Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <!--Intestazione-->
+        <header>
+            <img src="img/icon.png" alt="icona">
+            <h1>Emoji Stories</h1>
+        </header>
+
+        <!--Contenuti principali -->
+        <main class="building">
+
+            <!--schermata di preparazione-->
+            <div class="building-screen">
+
+
+                <!--campo nome-->
+                <div class="field">
+                    <label>Nome protagonista</label>
+                    <input type="text">
+                </div>
+
+                <!--Campo emojii-->
+                <div class="field">
+                    <label>Scegli 3 emojii</label>
+                    <ul class="emoji-list">
+                        <li class="emoji">👹</li>
+                        <li class="emoji">👽</li>
+                        <li class="emoji">🧚</li>
+                        <li class="emoji">🧟</li>
+                        <li class="emoji">🌴</li>
+                        <li class="emoji">🌍</li>
+                        <li class="emoji">🐥</li>
+                        <li class="emoji">🧢</li>
+                    </ul>
+                </div>
+
+                <button id="generate">Genera</button>
+            </div>
+
+            <!--Schermata di loading-->
+            <div class="loading-screen">
+                <img src="img/loader.gif" alt="loader">
+            </div>
+
+            <!--Schermata di risultato-->
+            <div class="result-screen">
+                <div class="story">
+                    <h2 class="story-title">Titolo</h2>
+                    <p class="story-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam praesentium
+                        possimus doloribus officiis deleniti nam debitis, eos amet perspiciatis earum, similique illo
+                        velit sit placeat, totam reprehenderit dolor quo eveniet.</p>
+                </div>
+                <div class="result-button">
+                    <button id="home" class="secondary-button">
+                        <img src="img/home.png" alt="home">
+                    </button>
+
+                    <button id="continue">AVANTI</button>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
